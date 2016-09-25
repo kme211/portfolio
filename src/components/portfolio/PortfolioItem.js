@@ -16,7 +16,7 @@ const PortfolioItem = ({name, date, desc, tags, links, imgUrl, imgAlt, visited})
       <p className="metadata__date">{date}</p>
       <p className="metadata__desc">{desc}</p>
       <div className="metadata__link">
-        <i className="fa fa-codepen" aria-hidden="true"></i> <Link url={links.code} text="Code"/>
+        <i className="fa fa-codepen" aria-hidden="true"/> <Link url={links.code} text="Code"/>
       </div>
       <TagList tags={tags} wrapperClass="metadata__tags"/>
      </section>
