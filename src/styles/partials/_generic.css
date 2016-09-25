@@ -1,0 +1,50 @@
+.button-green {
+  @mixin button $orange;
+}
+
+.button-teal {
+  @mixin button $teal;
+}
+
+a.link-animated {
+  color: $teal;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 2px;
+  transition: all .2s ease-in-out;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: $border-thickness;
+    background-color: color($teal lightness(+15%));
+    width: 0%;
+    display: block;
+    transition: width .5s ease-in-out;
+  }
+  &:hover {
+    color: color($teal lightness(+15%));
+    &:after {
+      width: 100%;
+    }
+  }
+}
+
+section:not(.portfolio-item__metadata) {
+  background-color: $dark-gray;
+  margin-bottom: 1em;
+  padding: 1em;
+  min-height: 100vh;
+  header {
+    color: $gray;
+    text-align: center;
+    font-size: 2em;
+    font-family: $primary-font;
+  }
+}
+
+.text-emphasize {
+  color: $green;
+  font-weight: 600;
+}

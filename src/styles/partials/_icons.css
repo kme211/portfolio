@@ -1,0 +1,31 @@
+.icon {
+  content: '';
+  display: block;
+  height: 2em;
+  width: 2em;
+  background-color: $teal;
+
+  &-menu {
+    mask: url('http://res.cloudinary.com/ddy54k4ks/image/upload/v1451321622/menu-32px_ynpore.svg');
+    position: fixed;
+    top: .5em;
+    left: 1em;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color .2s;
+    &:hover {
+      background-color: color($teal lightness(+15%));
+    }
+  }
+}
+
+.icon {
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	fill: $teal;
+  transition: all .2s;
+   &:hover {
+    fill: color($teal lightness(+15%));
+  }
+}

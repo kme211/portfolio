@@ -1,0 +1,49 @@
+#icon-menu {
+  position: fixed;
+  top: .5em;
+  left: 1em;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  transform: translateX(-100%);
+  z-index: 2;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $gray;
+  transition: transform .4s;
+  box-shadow: $default-shadow;
+  border-right: 4px solid $green;
+}
+
+.menu > ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu_visible {
+  transform: translateX(0);
+}
+
+.menu__item {
+  display: block;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+  font-family: $primary-font;
+  padding: 1em 3em;
+  transition: color .4s;
+  cursor: pointer;
+  border-bottom: 1px solid $dark-gray;
+  &:hover {
+    background-color: $green;
+    color: $dark-gray;
+  }
+}

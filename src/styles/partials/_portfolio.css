@@ -1,0 +1,62 @@
+#portfolio {
+  position: relative;
+}
+
+.portfolio {
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  flex: 0 1 325px;
+  &__img {
+    border: 2px solid $teal;
+    border-radius: $border-radius;
+  }
+}
+
+.portfolio-item__metadata {
+  padding: .5em;
+}
+
+.metadata {
+  &__name {
+    margin-bottom: .5em;
+    display: block;
+    font-size: $large-font-size;
+    &.visited:after {
+      color: $green;
+      content: " Viewed";
+      font-size: 0.7em;
+    }
+  }
+
+  &__date {
+    color: $gray;
+  }
+
+  &__desc {
+
+  }
+
+  &__tags {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    color: $teal;
+    display: block;
+    margin-bottom: .4em;
+  }
+
+}
