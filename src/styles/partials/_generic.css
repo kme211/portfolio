@@ -36,12 +36,21 @@ section:not(.portfolio-item__metadata) {
   margin-bottom: 1em;
   padding: 1em;
   min-height: 100vh;
-  header {
-    color: $gray;
-    text-align: center;
-    font-size: 2em;
-    font-family: $primary-font;
-  }
+}
+
+.section-header {
+  color: $gray;
+  text-align: center;
+  font-size: 2em;
+  font-family: $primary-font;
+}
+
+.sub-header {
+  color: $gray;
+  font-size: 1em;
+  font-family: $primary-font;
+  text-transform: uppercase;
+  margin-bottom: .35em;
 }
 
 .text-emphasize {

@@ -38,9 +38,7 @@ class PortfolioContainer extends React.Component {
 
     return (
       <section id="portfolio">
-        <header>
-          Portfolio
-        </header>
+        <header className="section-header">Portfolio</header>
         <Portfolio items={items} onClick={this.onClick}/>
 
       </section>

@@ -4,7 +4,7 @@ import Button from '../common/Button';
 const Splash = () => {
   return (
     <section id="splash" className="splash">
-      <header>Keari Eggers</header>
+      <header className="section-header">Keari Eggers</header>
       <div className="splash__tag">Front-end Web Developer</div>
       <div className="splash__social-buttons">
         <Button url="https://github.com/kme211" text="GitHub"/>

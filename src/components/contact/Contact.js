@@ -4,7 +4,7 @@ import Link from '../common/FancyLink';
 const Contact = () => {
   return (
     <section id="contact">
-      <header>Connect</header>
+      <header className="section-header">Connect</header>
       <p>
         Please feel free to connect with
         me on <Link url="https://twitter.com/kearieggers" text="Twitter"/>, <Link url="https://www.linkedin.com/in/keari" text="LinkedIn"/>  or
